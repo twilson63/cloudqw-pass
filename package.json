@@ -9,7 +9,7 @@
   "author": "Tom Wilson",
   "license": "MIT",
   "dependencies": {
-    "cloudq-worker": "0.0.1",
+    "cloudq-worker": "*",
     "request": "~2.10.0",
     "nconf": "~0.6.4"
   },
