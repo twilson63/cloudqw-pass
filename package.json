@@ -12,5 +12,14 @@
     "cloudq-worker": "0.0.1",
     "request": "~2.10.0",
     "nconf": "~0.6.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/twilson63/cloudqw-pass.git"
+  },
+  "keywords": [
+    "cloudq",
+    "worker"
+  ]
 }
