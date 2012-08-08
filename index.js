@@ -11,11 +11,10 @@ var Worker = require('cloudq-worker').Worker,
 // pass(config, urlObj.href, function(err, res){
 //  console.log('passed job to ' + urlObj.href);
 //});
-
 module.exports = function(qConfig, destUrl, callback) {
   var worker = new Worker(qConfig, function(err, doc, done) {
     request.post(destUrl, { json: doc }, function(e,r,b) {
       done(doc.id, callback);
     });
-  }
+  });
 }

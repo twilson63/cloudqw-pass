@@ -1,6 +1,6 @@
 {
   "name": "cloudqw-pass",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Generic CloudQ worker that receives a request and passes it to another api.",
   "main": "index.js",
   "scripts": {
