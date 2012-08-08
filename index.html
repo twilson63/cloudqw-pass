@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Cloudqw-pass by twilson63</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/twilson63/cloudqw-pass">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Cloudqw-pass</h1>
+            <h2>A cloudq worker that passes a job to a specified url</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/twilson63/cloudqw-pass/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/twilson63/cloudqw-pass/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>cloudqw-pass</h1>
+
+<p>Pass is a Cloudq worker that passes the job from the queue to a specified url performing a post.</p>
+
+<h1>install</h1>
+
+<div class="highlight"><pre>npm install cloudqw-pass
+</pre></div>
+
+<h1>use</h1>
+
+<div class="highlight"><pre><span class="kd">var</span> <span class="nx">pass</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'cloudqw-pass'</span><span class="p">),</span>
+<span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">protocol</span><span class="o">:</span> <span class="s1">'http'</span><span class="p">,</span>
+  <span class="nx">host</span><span class="o">:</span> <span class="s1">'localhost:3000'</span><span class="p">,</span>
+  <span class="nx">pathname</span><span class="o">:</span> <span class="s1">'/foo'</span><span class="p">,</span>
+  <span class="nx">interval</span><span class="o">:</span> <span class="mi">2000</span>
+<span class="p">}</span>
+<span class="nx">pass</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="s1">'http://foo.com/api/resource'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'posted job to '</span> <span class="o">+</span> <span class="err">/resource);</span>
+<span class="p">});</span>
+</pre></div>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/twilson63">twilson63</a> can be found on <a href="https://github.com/twilson63/cloudqw-pass">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
