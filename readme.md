@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/twilson63/cloudqw-pass.png)](http://travis-ci.org/twilson63/cloudqw-pass)
 # cloudqw-pass
 
 Pass is a Cloudq worker that passes the job from the queue to a specified url performing a post.
