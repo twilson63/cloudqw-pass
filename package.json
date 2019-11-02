@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "cloudq-worker": "*",
-    "request": "~2.10.0",
+    "request": "~2.88.0",
     "nconf": "~0.6.4"
   },
   "devDependencies": {},
